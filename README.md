@@ -1,9 +1,5 @@
-Here’s a detailed README description for your GitHub repository:
-
+# Chatterbox
 ---
-
-# Chatterbox (or your chosen name)
-
 **Chatterbox** is a full-stack real-time chat application built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js) with **Material UI** for a clean, responsive UI and **Socket.io** for real-time messaging capabilities. This app allows users to engage in both group and private chats with an intuitive, modern interface.
 
 ## Features
