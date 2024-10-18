@@ -74,6 +74,7 @@ const LoginForm = ({handleModalOpen}) => {
           <FormControl fullWidth variant="outlined">
             <InputLabel
               htmlFor="component-outlined-email"
+              required
               color={errors.email && touched.email ? "error" : "primary"}
             >
               Email
@@ -109,7 +110,7 @@ const LoginForm = ({handleModalOpen}) => {
             ) : null}
           </FormControl>
           <FormControl variant="outlined" fullWidth>
-            <InputLabel htmlFor="component-outlined-password">
+            <InputLabel htmlFor="component-outlined-password" required>
               Password
             </InputLabel>
             <OutlinedInput
@@ -201,6 +202,7 @@ const Login = () => {
         validationSchema={loginValidationSchema}
         onSubmit={(values, { setSubmitting }) => {
           setSubmitting(true);
+          console.log(values);
         }}
       >
         {
